@@ -1,0 +1,70 @@
+@import '../scss/index.scss';
+
+.layoutAdmin {
+    transition: margin-left 0,2s;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+          }
+    }
+
+    &__content {
+        background-color: #C6C6C6;
+        padding: 33px 100px 100px 100px;
+    }
+
+    &__footer {
+        background-color: #C6C6C6;
+        padding: 20px;
+        text-align: 'center';
+    }
+
+    &__wpp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        text-align:center;
+        font-size:30px;
+        z-index:100;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.carrusel {
+    img {
+        width: 100%;
+        height: auto;
+      }
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 600ms ease-out,
+      visibility 1200ms ease-out;
+    will-change: opacity, transform, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }

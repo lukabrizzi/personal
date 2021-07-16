@@ -1,0 +1,46 @@
+@import '../../../scss/index.scss';
+
+.register-form {
+
+    .ant-form-item {
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+
+    &__input {
+        .ant-input-prefix {
+            i {
+                font-size: 0em + 22px / $defaultFontSize;
+            }
+        }
+
+        input {
+            font-size: 0em + 20px / $defaultFontSize;
+            &:focus {
+                border-color: $primaryColorHover;
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__button {
+        width: 100%;
+        font-size: oem + 22px / $defaultFontSize;
+        background-color: $primaryColorHover;
+        color: $fontLight;
+        height: 42px;
+
+        &:hover {
+            background-color: $primaryColorHover;
+            color: $fontLight;
+        }
+
+        &:focus,
+        &:active {
+            background-color: $primaryColorHover;
+            color: $fontLight;
+            border: 0;
+        }
+    }
+}
